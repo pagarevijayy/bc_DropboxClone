@@ -79,7 +79,7 @@ class App extends Component {
 
     // Add file to the IPFS
     ipfs.add(this.state.buffer, (error, result) => {
-      console.log('IPFS result', result.size)
+      console.log('IPFS result', result)
       if(error) {
         console.error(error)
         return
